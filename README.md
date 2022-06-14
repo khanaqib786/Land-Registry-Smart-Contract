@@ -235,17 +235,5 @@ contract Landregistration
          Landinspectorverify [addr] = false;
     }
 
-    uint Public amount;
-    address payable receiver;
-
-    function get amount(uint _LandID, uint _amount_) public payable
-    {
-        require (msg.value < 3 ether, "Please Pay ether");
-       // require (Land reg[_LandID].owner == msg.sender,"hbfdj");
-        amount = msg.value;
-        receiver.transfer(msg.value);
-       // return amount;
-
-
-    }
+   
 
